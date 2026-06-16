@@ -24,6 +24,11 @@
     .btn-dark:hover { background: #C4A07C !important; }
     .btn-outline:hover { border-color: #C4A07C !important; color: #38322c !important; }
     .pill-link:hover { border-color: #C4A07C !important; color: #C4A07C !important; }
+    .btn-nav-short { display: none; }
+    @media (max-width: 900px) {
+      .btn-nav-full { display: none; }
+      .btn-nav-short { display: inline; }
+    }
     .back-link:hover { color: #C4A07C !important; }
 
     @media (max-width: 900px) {
@@ -78,7 +83,7 @@
         <a href="#blefaro-superior" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">Procedimentos</a>
         <a href="index.html#faq" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">Dúvidas</a>
         <a href="https://instagram.com/dra.karintoledo" target="_blank" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">@dra.karintoledo</a>
-        <a href="#agende" class="btn-dark" style="background: #414141; color: #FBF6EF; font-size: 13px; font-weight: 500; letter-spacing: 0.4px; padding: 11px 22px; border-radius: 100px; transition: background 0.2s;">Agende sua avaliação</a>
+        <a href="#agende" class="btn-dark" style="background: #414141; color: #FBF6EF; font-size: 13px; font-weight: 500; letter-spacing: 0.4px; padding: 11px 22px; border-radius: 100px; transition: background 0.2s;"><span class="btn-nav-full">Agende sua avaliação</span><span class="btn-nav-short">Agendar</span></a>
       </div>
     </nav>
   </header>

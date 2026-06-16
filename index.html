@@ -27,6 +27,11 @@
     .card-service:hover { border-color: #C4A07C !important; box-shadow: 0 8px 32px -8px rgba(196,160,124,0.25) !important; }
     .card-dark:hover { box-shadow: 0 8px 32px -8px rgba(196,160,124,0.4) !important; }
     .btn-outline:hover { border-color: #C4A07C !important; color: #38322c !important; }
+    .btn-nav-short { display: none; }
+    @media (max-width: 860px) {
+      .btn-nav-full { display: none; }
+      .btn-nav-short { display: inline; }
+    }
 
     /* ── 860 px ── */
     @media (max-width: 860px) {
@@ -108,7 +113,7 @@
         <a href="#sobre" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">Sobre</a>
         <a href="#servicos" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">Procedimentos</a>
         <a href="#faq" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">Dúvidas</a>
-        <a href="#agende" class="btn-dark" style="background: #414141; color: #FBF6EF; font-size: 13px; font-weight: 500; letter-spacing: 0.4px; padding: 11px 22px; border-radius: 100px; transition: background 0.2s;">Agende sua avaliação</a>
+        <a href="#agende" class="btn-dark" style="background: #414141; color: #FBF6EF; font-size: 13px; font-weight: 500; letter-spacing: 0.4px; padding: 11px 22px; border-radius: 100px; transition: background 0.2s;"><span class="btn-nav-full">Agende sua avaliação</span><span class="btn-nav-short">Agendar</span></a>
       </div>
     </nav>
   </header>
@@ -117,7 +122,6 @@
   <section id="home" style="max-width: 1240px; margin: 0 auto; padding: 72px 40px 96px; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 72px; align-items: center;">
     <div data-reveal>
       <div style="display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px; border: 1px solid rgba(196,160,124,0.5); border-radius: 100px; margin-bottom: 32px;">
-        <span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C;"></span>
         <span style="font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; color: #9a7e5f; font-weight: 500;">Leblon · Ipanema · Icaraí</span>
       </div>
       <h1 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 56px; line-height: 1.04; letter-spacing: -0.5px; color: #38322c; margin: 0 0 28px; text-wrap: balance;">Você não quer mudar. Quer se reconhecer.<br><span style="color: #82766a; font-size: 48px;">O olhar que o tempo alterou pode voltar a ser o seu.</span></h1>
