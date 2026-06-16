@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Especialidades — Dra. Karin Toledo · Plástica Ocular</title>
+  <meta name="description" content="Blefaroplastia superior e inferior, lipoenxertia periorbital e vias lacrimais. Saiba mais sobre os procedimentos da Dra. Karin Toledo.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #FBF6EF; font-family: 'Montserrat', sans-serif; color: #4a4038; overflow-x: hidden; }
+    ::selection { background: #C4A07C; color: #fff; }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { margin: 0; }
+    p { margin: 0; }
+    a { text-decoration: none; }
+    .proc-anchor { scroll-margin-top: 90px; }
+    .faq-q:hover span:first-child { color: #9a7e5f; }
+
+    .btn-dark:hover { background: #C4A07C !important; }
+    .btn-outline:hover { border-color: #C4A07C !important; color: #38322c !important; }
+    .pill-link:hover { border-color: #C4A07C !important; color: #C4A07C !important; }
+    .back-link:hover { color: #C4A07C !important; }
+
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr !important; }
+      .hero-grid-rev { grid-template-columns: 1fr !important; }
+      .hero-grid-rev > div:last-child { order: -1 !important; }
+      [data-navlinks] a:not(:last-child) { display: none !important; }
+      .hero-grid > div[style*="sticky"],
+      .hero-grid-rev > div[style*="sticky"] { position: static !important; }
+      div[style*="repeat(5, 1fr)"],
+      div[style*="repeat(4, 1fr)"] { grid-template-columns: 1fr 1fr !important; }
+      div[style*="repeat(5, 1fr)"] > div,
+      div[style*="repeat(4, 1fr)"] > div { border-right: none !important; padding: 12px 0 !important; border-bottom: 1px solid rgba(196,160,124,0.2); }
+      div[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
+    }
+    @media (max-width: 520px) {
+      .pad { padding-left: 22px !important; padding-right: 22px !important; }
+      h2[style*="font-size: 44px"] { font-size: 32px !important; }
+      h1[style*="font-size: 50px"] { font-size: 34px !important; }
+    }
+
+    /* Scroll reveal */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(26px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    [data-reveal] { opacity: 0; }
+    [data-reveal].revealed { animation: fadeUp 0.75s cubic-bezier(0.22,1,0.36,1) both; }
+    [data-reveal][data-reveal-delay="1"].revealed { animation-delay: 0.12s; }
+    [data-reveal][data-reveal-delay="2"].revealed { animation-delay: 0.24s; }
+    [data-reveal-group] > * { opacity: 0; }
+    [data-reveal-group].revealed > *:nth-child(1) { animation: fadeUp 0.7s 0.00s cubic-bezier(0.22,1,0.36,1) both; }
+    [data-reveal-group].revealed > *:nth-child(2) { animation: fadeUp 0.7s 0.10s cubic-bezier(0.22,1,0.36,1) both; }
+    [data-reveal-group].revealed > *:nth-child(3) { animation: fadeUp 0.7s 0.20s cubic-bezier(0.22,1,0.36,1) both; }
+    [data-reveal-group].revealed > *:nth-child(4) { animation: fadeUp 0.7s 0.30s cubic-bezier(0.22,1,0.36,1) both; }
+    @media (prefers-reduced-motion: reduce) {
+      [data-reveal], [data-reveal-group] > * { opacity: 1 !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header style="position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(251,246,239,0.82); border-bottom: 1px solid rgba(65,65,65,0.08);">
+    <nav style="max-width: 1240px; margin: 0 auto; padding: 18px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px;" class="pad">
+      <a href="index.html" style="display: flex; flex-direction: column; line-height: 1;">
+        <span style="font-family: 'Fraunces', serif; font-size: 21px; font-weight: 500; color: #3a342e; letter-spacing: 0.3px;">Dra. Karin Toledo</span>
+        <span style="font-size: 10px; letter-spacing: 2.4px; text-transform: uppercase; color: #C4A07C; margin-top: 5px; font-weight: 500;">PLÁSTICA OCULAR</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 36px;" data-navlinks>
+        <a href="index.html#sobre" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">Sobre</a>
+        <a href="#blefaro-superior" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">Procedimentos</a>
+        <a href="index.html#faq" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">Dúvidas</a>
+        <a href="https://instagram.com/dra.karintoledo" target="_blank" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">@dra.karintoledo</a>
+        <a href="#agende" class="btn-dark" style="background: #414141; color: #FBF6EF; font-size: 13px; font-weight: 500; letter-spacing: 0.4px; padding: 11px 22px; border-radius: 100px; transition: background 0.2s;">Agende sua avaliação</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section style="position: relative; background: #2e2a26; overflow: hidden; min-height: 400px; display: flex; align-items: center;">
+    <div data-parallax data-parallax-base="40" style="position: absolute; inset: 0; background: url('images/centro-cirurgico.jpg') center 40% / cover no-repeat;"></div>
+    <div style="position: absolute; inset: 0; background: linear-gradient(100deg, rgba(46,42,38,0.93) 0%, rgba(46,42,38,0.6) 100%);"></div>
+    <div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 96px 40px;" class="pad" data-reveal>
+      <a href="index.html" class="back-link" style="display: inline-flex; align-items: center; gap: 8px; color: #d3bfa6; font-size: 13px; font-weight: 500; margin-bottom: 28px; transition: color 0.2s;">← Voltar ao site</a>
+      <h1 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 50px; line-height: 1.08; color: #F6EEE3; margin: 0 0 20px; max-width: 16em; text-wrap: balance;">Especialidades</h1>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <a href="#blefaro-superior" class="pill-link" style="padding: 10px 20px; border: 1px solid rgba(196,160,124,0.5); border-radius: 100px; font-size: 13px; color: #d3bfa6; font-weight: 500; transition: border-color 0.2s, color 0.2s;">Blefaroplastia Superior</a>
+        <a href="#blefaro-inferior" class="pill-link" style="padding: 10px 20px; border: 1px solid rgba(196,160,124,0.5); border-radius: 100px; font-size: 13px; color: #d3bfa6; font-weight: 500; transition: border-color 0.2s, color 0.2s;">Blefaroplastia Inferior</a>
+        <a href="#lipoenxertia" class="pill-link" style="padding: 10px 20px; border: 1px solid rgba(196,160,124,0.5); border-radius: 100px; font-size: 13px; color: #d3bfa6; font-weight: 500; transition: border-color 0.2s, color 0.2s;">Lipoenxertia Periorbital</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLEFAROPLASTIA SUPERIOR
+  ══════════════════════════════════════════ -->
+  <section id="blefaro-superior" class="proc-anchor" style="max-width: 1240px; margin: 0 auto; padding: 110px 40px 80px;">
+
+    <div style="display: grid; grid-template-columns: 1fr 1.05fr; gap: 72px; align-items: start; margin-bottom: 72px;" class="hero-grid">
+      <div style="position: sticky; top: 100px;" data-reveal>
+        <div style="border-radius: 12px; overflow: hidden; background: #2e2a26 url('images/blefaro-superior.jpg') center 20% / cover no-repeat; aspect-ratio: 4/5; border: 1px solid rgba(196,160,124,0.35); box-shadow: 0 32px 72px -36px rgba(65,65,65,0.45);"></div>
+      </div>
+      <div data-reveal data-reveal-delay="1">
+        <span style="font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: #C4A07C; font-weight: 600;">Pálpebra superior</span>
+        <h2 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 44px; line-height: 1.08; color: #38322c; margin: 14px 0 26px; text-wrap: balance;">Blefaroplastia Superior</h2>
+        <p style="font-size: 16px; line-height: 1.8; color: #6a5f54; margin: 0 0 32px;">A blefaroplastia superior é a cirurgia que remove o excesso de pele da pálpebra superior. Com o envelhecimento, a pele que cobre o olho vai perdendo firmeza e começa a pesar sobre a pálpebra, alterando o olhar e, em alguns casos, comprometendo a visão periférica. A cirurgia corrige isso com precisão milimétrica, sem mudar a expressão do rosto.</p>
+
+        <div style="padding: 26px 30px; background: rgba(225,209,193,0.32); border-radius: 12px; border: 1px solid rgba(196,160,124,0.2); margin-bottom: 24px;">
+          <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 17px; color: #38322c; margin: 0 0 12px;">O que muda depois</h3>
+          <p style="font-size: 14.5px; line-height: 1.75; color: #6a5f54; margin: 0 0 14px;">O olhar fica mais aberto. A expressão de cansaço permanente desaparece. Fotos voltam a mostrar o olho inteiro, simétrico, com a abertura que sempre foi sua.</p>
+          <p style="font-size: 14px; line-height: 1.65; color: #82766a; margin: 0; font-style: italic;">"Parece que eu dormi bem." "Meu olho voltou." "Ninguém perguntou se eu operei, mas todo mundo disse que eu estava diferente."</p>
+        </div>
+
+        <div style="padding-left: 22px; border-left: 2px solid #C4A07C;">
+          <p style="font-family: 'Fraunces', serif; font-style: italic; font-size: 18px; line-height: 1.55; color: #5c5249; margin: 0;">"A blefaroplastia certa não muda quem você é. Ela devolve o olhar que o tempo foi alterando sem que você percebesse."</p>
+          <span style="font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; color: #C4A07C; font-weight: 500; display: block; margin-top: 10px;">Dra. Karin Toledo</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 28px;" class="hero-grid" data-reveal-group>
+      <div style="padding: 32px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 12px;">
+        <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; color: #38322c; margin: 0 0 20px;">Para quem é indicada</h3>
+        <p style="font-size: 13.5px; line-height: 1.7; color: #82766a; margin: 0 0 16px;">A indicação não depende da idade. Depende do que o envelhecimento fez com aquela pálpebra específica.</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Pálpebra superior que pesa ou cobre parte do olho, especialmente no final do dia</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Olhar que parece cansado independentemente do quanto a paciente dormiu ou se cuidou</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Assimetria entre os olhos que passou a aparecer em fotos</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Sensação de que o olhar "fechou" com o tempo</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Pálpebra que interfere na visão periférica — com possibilidade de cobertura por convênio</span></div>
+        </div>
+        <p style="font-size: 13px; line-height: 1.65; color: #9a8a78; margin: 18px 0 0; font-style: italic;">A indicação exata é definida na avaliação individual.</p>
+      </div>
+      <div style="padding: 32px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 12px;">
+        <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; color: #38322c; margin: 0 0 16px;">Como é feita</h3>
+        <p style="font-size: 14px; line-height: 1.75; color: #6a5f54; margin: 0 0 14px;">Realizada com anestesia local, em ambiente ambulatorial. A incisão é feita na dobra natural da pálpebra — a mesma linha que a própria anatomia já cria quando o olho está aberto. Por isso, quando a cicatrização está completa, ela é imperceptível.</p>
+        <p style="font-size: 14px; line-height: 1.75; color: #6a5f54; margin: 0 0 20px;">O procedimento remove o excesso de pele e, quando indicado, reposiciona ou remove pequenas bolsas de gordura. Duração: 45 minutos a 1 hora e meia, dependendo do caso.</p>
+        <div style="background: rgba(225,209,193,0.3); border-radius: 8px; padding: 16px 20px; display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="color: #9a8a78;">Anestesia</span><span style="color: #4a4038; font-weight: 500;">Local · ambulatorial</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="color: #9a8a78;">Duração</span><span style="color: #4a4038; font-weight: 500;">45 min a 1h30</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="color: #9a8a78;">Cicatriz</span><span style="color: #4a4038; font-weight: 500;">Oculta na dobra natural</span></div>
+          <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="color: #9a8a78;">Resultado definitivo</span><span style="color: #4a4038; font-weight: 500;">A partir de 3 meses</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding: 36px 40px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 12px; margin-bottom: 28px;">
+      <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; color: #38322c; margin: 0 0 28px;">Recuperação</h3>
+      <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0;" class="hero-grid">
+        <div style="padding: 0 20px 0 0; border-right: 1px solid rgba(196,160,124,0.2);"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">Dias 1–3</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Inchaço e hematoma intensos. Repouso, compressas frias.</p></div>
+        <div style="padding: 0 20px; border-right: 1px solid rgba(196,160,124,0.2);"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">Dias 4–7</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Hematoma começa a dissipar. Mais conforto em casa.</p></div>
+        <div style="padding: 0 20px; border-right: 1px solid rgba(196,160,124,0.2);"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">Dias 7–14</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Retirada dos pontos. Com maquiagem, retomada social.</p></div>
+        <div style="padding: 0 20px; border-right: 1px solid rgba(196,160,124,0.2);"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">1 mês</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Resultado inicial visível. Ainda não definitivo.</p></div>
+        <div style="padding: 0 0 0 20px;"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">3 meses</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Resultado definitivo. Cicatriz maturada, inchaço resolvido.</p></div>
+      </div>
+      <div style="margin-top: 24px; padding: 14px 20px; background: rgba(225,209,193,0.3); border-radius: 8px; font-size: 13.5px; color: #5c5249; font-style: italic;">Não avalie sua cirurgia antes de 3 meses. O que você vê antes disso é processo. O que você vê depois é o resultado.</div>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+      <h3 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 26px; color: #38322c; margin: 0 0 4px;">Perguntas frequentes</h3>
+      <p style="font-size: 14px; color: #82766a; margin: 0 0 24px;">Blefaroplastia superior</p>
+      <div style="border-top: 1px solid rgba(196,160,124,0.35);">
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">A cicatriz fica aparente?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">A incisão é feita exatamente na dobra natural da pálpebra. Com o olho aberto, ela fica dentro dessa dobra e não é visível. Com a cicatrização completa — por volta dos 3 meses — torna-se imperceptível mesmo de perto. Em muitos casos, nem a própria paciente consegue localizar a cicatriz.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Vai mudar a expressão do meu rosto?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 8px;max-width:66ch;">Uma blefaroplastia bem-indicada e bem-executada não altera a expressão. O objetivo é restaurar o olhar que existia antes — não criar um olhar novo. Quando o resultado chama atenção pelo procedimento, algo foi feito além do necessário.</p><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">Por isso a avaliação começa sempre com uma pergunta: o que você quer preservar? Não apenas o que você quer corrigir.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Preciso parar de trabalhar durante a recuperação?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">Depende do tipo de trabalho. Para atividades remotas, a maioria retoma na primeira semana. Para atividades presenciais que exigem aparência social, o mais comum é um afastamento de 10 a 14 dias.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Tem cobertura por convênio?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">Quando há comprometimento funcional da visão pela pálpebra caída, existe possibilidade de cobertura por convênio, mediante documentação específica produzida na avaliação. Procedimentos com finalidade exclusivamente estética não têm cobertura. Esse é um dos pontos avaliados na consulta.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Posso combinar com outros procedimentos?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">Sim. A blefaroplastia superior pode ser combinada com blefaroplastia inferior e com lipoenxertia periorbital, para um rejuvenescimento ocular mais completo. A indicação de combinar procedimentos depende de cada caso e é definida na avaliação.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Com que frequência preciso repetir a cirurgia?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">A blefaroplastia superior não é um procedimento que se "refaz" periodicamente. O resultado dura anos. Em alguns casos, com o avanço natural do envelhecimento, pode ser indicado um retoque — mas isso é avaliado individualmente, geralmente muito tempo depois.</p></div></div>
+      </div>
+    </div>
+
+    <a href="#agende" class="btn-dark" style="display: inline-flex; align-items: center; gap: 12px; background: #414141; color: #FBF6EF; font-size: 14.5px; font-weight: 500; padding: 17px 32px; border-radius: 100px; transition: background 0.2s;">Agendar avaliação →</a>
+  </section>
+
+  <!-- DIVIDER -->
+  <div style="background: rgba(225,209,193,0.3); border-top: 1px solid rgba(196,160,124,0.2); border-bottom: 1px solid rgba(196,160,124,0.2); padding: 40px; text-align: center;">
+    <p style="font-family: 'Fraunces', serif; font-weight: 300; font-size: 20px; font-style: italic; color: #6a5f54; margin: 0 auto; max-width: 70ch; line-height: 1.5;">"O resultado de uma boa cirurgia não tem assinatura. Ninguém percebe o procedimento. Percebem você." <span style="font-family: 'Montserrat', sans-serif; font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: #C4A07C; font-style: normal; font-weight: 500; display: inline-block; margin-left: 6px;">— Dra. Karin Toledo</span></p>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       BLEFAROPLASTIA INFERIOR
+  ══════════════════════════════════════════ -->
+  <section id="blefaro-inferior" class="proc-anchor" style="max-width: 1240px; margin: 0 auto; padding: 110px 40px 80px;">
+
+    <div style="display: grid; grid-template-columns: 1.05fr 1fr; gap: 72px; align-items: start; margin-bottom: 72px;" class="hero-grid hero-grid-rev">
+      <div data-reveal>
+        <span style="font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: #C4A07C; font-weight: 600;">Pálpebra inferior</span>
+        <h2 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 44px; line-height: 1.08; color: #38322c; margin: 14px 0 26px; text-wrap: balance;">Blefaroplastia Inferior</h2>
+        <p style="font-size: 16px; line-height: 1.8; color: #6a5f54; margin: 0 0 32px;">A blefaroplastia inferior trata as bolsas de gordura da pálpebra inferior — aquelas protuberâncias abaixo do olho que criam sombra, profundidade e aparência de cansaço permanente. Diferente de olheiras causadas por pigmentação, essas bolsas não somem com sono, cremes ou estilo de vida. São estruturais, e têm solução cirúrgica.</p>
+
+        <div style="padding: 26px 30px; background: rgba(225,209,193,0.32); border-radius: 12px; border: 1px solid rgba(196,160,124,0.2); margin-bottom: 24px;">
+          <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 17px; color: #38322c; margin: 0 0 12px;">O que muda depois</h3>
+          <p style="font-size: 14.5px; line-height: 1.75; color: #6a5f54; margin: 0;">A região abaixo do olho fica mais lisa, mais uniforme. A sombra que a bolsa criava desaparece. O olhar como um todo ganha leveza — menos profundidade, menos peso, menos aquela sensação de que você parece mais cansada do que está.</p>
+        </div>
+
+        <div style="padding-left: 22px; border-left: 2px solid #C4A07C;">
+          <p style="font-family: 'Fraunces', serif; font-style: italic; font-size: 18px; line-height: 1.55; color: #5c5249; margin: 0;">"A blefaroplastia inferior é um dos procedimentos mais subestimados em rejuvenescimento ocular. O resultado é transformador — e quase ninguém percebe que foi cirurgia."</p>
+          <span style="font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; color: #C4A07C; font-weight: 500; display: block; margin-top: 10px;">Dra. Karin Toledo</span>
+        </div>
+      </div>
+      <div style="position: sticky; top: 100px;" data-reveal data-reveal-delay="1">
+        <div style="border-radius: 12px; overflow: hidden; background: #E1D1C1 url('images/blefaro-inferior.jpg') center / cover no-repeat; aspect-ratio: 4/5; border: 1px solid rgba(196,160,124,0.35); box-shadow: 0 32px 72px -36px rgba(65,65,65,0.45);"></div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 28px;" class="hero-grid" data-reveal-group>
+      <div style="padding: 32px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 12px;">
+        <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; color: #38322c; margin: 0 0 16px;">Para quem é indicada</h3>
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px;">
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Bolsas de gordura visíveis abaixo dos olhos, independentes do sono</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Sombra ou profundidade acentuada na região inferior, especialmente em fotos</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Aparência de cansaço crônico que não melhora com cuidados tópicos</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Pacientes que já trataram a pálpebra superior mas a região inferior ainda incomoda</span></div>
+        </div>
+        <p style="font-size: 13px; line-height: 1.65; color: #9a8a78; margin: 0; font-style: italic;">Pode ser feita isoladamente ou combinada com blefaroplastia superior e lipoenxertia.</p>
+      </div>
+      <div style="padding: 32px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 12px;">
+        <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; color: #38322c; margin: 0 0 14px;">A técnica que faz a diferença</h3>
+        <p style="font-size: 14px; line-height: 1.75; color: #6a5f54; margin: 0 0 16px;">Quando as bolsas de gordura são o problema principal, a abordagem indicada é a <strong style="color:#38322c; font-weight:600;">via transconjuntival</strong>: a incisão é feita pela parte interna da pálpebra, sem qualquer corte visível na pele.</p>
+        <p style="font-size: 14px; line-height: 1.75; color: #6a5f54; margin: 0 0 16px;">Essa técnica é pouco utilizada fora de centros especializados em plástica ocular, justamente por exigir domínio anatômico específico da região.</p>
+        <div style="padding: 14px 18px; background: rgba(225,209,193,0.3); border-radius: 8px; font-size: 13px; color: #5c5249;">Quando há excesso de pele associado, a incisão externa fica imediatamente abaixo dos cílios inferiores e torna-se imperceptível com a cicatrização completa.</div>
+      </div>
+    </div>
+
+    <div style="padding: 32px 40px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 12px; margin-bottom: 28px;">
+      <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; color: #38322c; margin: 0 0 16px;">Relação com a olheira pigmentada</h3>
+      <p style="font-size: 14.5px; line-height: 1.75; color: #6a5f54; margin: 0 0 12px;">A blefaroplastia inferior trata bolsas de gordura e excesso de pele. Ela não trata olheira causada por pigmentação escura da pele. Em muitos casos, as duas condições coexistem. A bolsa cria sombra que parece escuridão — após a cirurgia, parte do que parecia olheira pigmentada desaparece junto com a sombra.</p>
+      <p style="font-size: 14.5px; line-height: 1.75; color: #6a5f54; margin: 0;">A avaliação identifica o que está presente em cada caso — e o que cada abordagem pode ou não resolver.</p>
+    </div>
+
+    <div style="padding: 36px 40px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 12px; margin-bottom: 28px;">
+      <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; color: #38322c; margin: 0 0 28px;">Recuperação</h3>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;" class="hero-grid">
+        <div style="padding: 0 20px 0 0; border-right: 1px solid rgba(196,160,124,0.2);"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">Dias 1–5</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Inchaço na região inferior. Hematoma discreto a moderado.</p></div>
+        <div style="padding: 0 20px; border-right: 1px solid rgba(196,160,124,0.2);"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">Dias 5–10</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Melhora visível. Via transconjuntival tende a ser mais discreta.</p></div>
+        <div style="padding: 0 20px; border-right: 1px solid rgba(196,160,124,0.2);"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">2–4 semanas</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Maioria das pacientes já confortável socialmente.</p></div>
+        <div style="padding: 0 0 0 20px;"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">3 meses</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Resultado definitivo.</p></div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+      <h3 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 26px; color: #38322c; margin: 0 0 4px;">Perguntas frequentes</h3>
+      <p style="font-size: 14px; color: #82766a; margin: 0 0 24px;">Blefaroplastia inferior</p>
+      <div style="border-top: 1px solid rgba(196,160,124,0.35);">
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Qual a diferença entre olheira e bolsa de gordura?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 8px;max-width:66ch;">Olheira pigmentada é o escurecimento da pele da região inferior do olho — causado por melanina, vasos sanguíneos visíveis ou a espessura da pele nessa área. A blefaroplastia inferior não trata pigmentação.</p><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">Bolsa de gordura é a protuberância abaixo do olho criada por compartimentos de gordura orbital que se projetam para frente. Essa é a indicação da blefaroplastia inferior. Em muitos casos, a sombra que a bolsa cria é confundida com olheira escura — e desaparece com a cirurgia.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Vai ficar cicatriz visível?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">Na abordagem transconjuntival (pela parte interna da pálpebra), não há cicatriz na pele — nenhuma. Na abordagem externa, a incisão fica imediatamente abaixo dos cílios inferiores e torna-se imperceptível com a cicatrização completa.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Pode ser feita junto com a blefaroplastia superior?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">Sim. As duas podem ser feitas no mesmo procedimento quando há indicação em ambas as pálpebras. O planejamento conjunto permite uma recuperação única e um resultado mais integrado de rejuvenescimento ocular.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">E com a lipoenxertia periorbital?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">Também pode ser combinada. Em alguns casos, além das bolsas de gordura há perda de volume na região abaixo do olho que cria um sulco profundo. A lipoenxertia restaura esse volume enquanto a blefaroplastia trata as bolsas. Juntos, produzem um resultado mais completo.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Quanto tempo dura o resultado?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">O resultado da blefaroplastia inferior é duradouro. As bolsas de gordura que foram removidas ou reposicionadas não voltam. O envelhecimento continua — mas a partir de um ponto estruturalmente diferente. Em geral, o resultado se mantém por muitos anos sem necessidade de revisão.</p></div></div>
+      </div>
+    </div>
+
+    <a href="#agende" class="btn-dark" style="display: inline-flex; align-items: center; gap: 12px; background: #414141; color: #FBF6EF; font-size: 14.5px; font-weight: 500; padding: 17px 32px; border-radius: 100px; transition: background 0.2s;">Agendar avaliação →</a>
+  </section>
+
+  <!-- DIVIDER DARK -->
+  <section style="position: relative; background: #2e2a26; overflow: hidden;">
+    <div data-parallax data-parallax-base="35" style="position: absolute; inset: 0; background: url('images/cirurgia-wide.jpg') center 35% / cover no-repeat;"></div>
+    <div style="position: absolute; inset: 0; background: rgba(46,42,38,0.86);"></div>
+    <div style="position: relative; max-width: 900px; margin: 0 auto; padding: 88px 40px; text-align: center;" class="pad" data-reveal>
+      <p style="font-family: 'Fraunces', serif; font-weight: 300; font-size: 28px; line-height: 1.45; color: #F6EEE3; margin: 0; font-style: italic; text-wrap: balance;">A região periorbital é a mais complexa do rosto para operar. Exige o tipo de conhecimento que só a especialização em Plástica Ocular proporciona.</p>
+      <div style="margin-top: 24px; font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; color: #C4A07C;">Dra. Karin Toledo · Especialista em Plástica Ocular e Vias Lacrimais · Membro da SBCPO</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       LIPOENXERTIA PERIORBITAL
+  ══════════════════════════════════════════ -->
+  <section id="lipoenxertia" class="proc-anchor" style="max-width: 1240px; margin: 0 auto; padding: 110px 40px 80px;">
+
+    <div style="display: grid; grid-template-columns: 1fr 1.05fr; gap: 72px; align-items: start; margin-bottom: 72px;" class="hero-grid">
+      <div style="position: sticky; top: 100px;" data-reveal>
+        <div style="border-radius: 12px; overflow: hidden; background: #2e2a26 url('images/lipoenxertia.jpg') center 65% / cover no-repeat; aspect-ratio: 4/5; border: 1px solid rgba(196,160,124,0.35); box-shadow: 0 32px 72px -36px rgba(65,65,65,0.45);"></div>
+      </div>
+      <div data-reveal data-reveal-delay="1">
+        <span style="font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: #C4A07C; font-weight: 600;">FAT GRAFTING</span>
+        <h2 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 44px; line-height: 1.08; color: #38322c; margin: 14px 0 26px; text-wrap: balance;">Lipoenxertia Periorbital</h2>
+        <p style="font-size: 16px; line-height: 1.8; color: #6a5f54; margin: 0 0 32px;">A lipoenxertia periorbital usa gordura da própria paciente para restaurar o volume que a região dos olhos perde com o envelhecimento. É um dos procedimentos mais modernos em rejuvenescimento ocular: sem materiais sintéticos, sem implantes, sem risco imunológico. O material é da paciente. O resultado pode ser permanente.</p>
+
+        <div style="padding: 26px 30px; background: rgba(225,209,193,0.32); border-radius: 12px; border: 1px solid rgba(196,160,124,0.2); margin-bottom: 24px;">
+          <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 17px; color: #38322c; margin: 0 0 12px;">O que muda depois</h3>
+          <p style="font-size: 14.5px; line-height: 1.75; color: #6a5f54; margin: 0 0 12px;">A região ao redor dos olhos recupera estrutura. O sulco profundo abaixo do olho fica menos marcado. O olhar perde aquela aparência de profundidade excessiva que não corresponde a como a paciente se sente por dentro.</p>
+          <p style="font-size: 14px; line-height: 1.65; color: #82766a; margin: 0; font-style: italic;">Em muitos casos, a lipoenxertia resolve o que nenhum creme, preenchimento ou blefaroplastia conseguiria sozinho.</p>
+        </div>
+
+        <div style="padding-left: 22px; border-left: 2px solid #C4A07C;">
+          <p style="font-family: 'Fraunces', serif; font-style: italic; font-size: 18px; line-height: 1.55; color: #5c5249; margin: 0;">"Não é sobre adicionar algo novo. É sobre devolver o que estava lá."</p>
+          <span style="font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; color: #C4A07C; font-weight: 500; display: block; margin-top: 10px;">Dra. Karin Toledo</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 28px;" class="hero-grid" data-reveal-group>
+      <div style="padding: 32px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 12px;">
+        <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; color: #38322c; margin: 0 0 14px;">Por que exige especialização específica</h3>
+        <p style="font-size: 14px; line-height: 1.75; color: #6a5f54; margin: 0 0 14px;">A área ao redor dos olhos é, anatomicamente, a mais complexa do rosto para fat grafting. A pele é extremamente fina. As estruturas musculares e orbitais são delicadas. Os planos de injeção exigem precisão que vai além da formação em cirurgia plástica geral.</p>
+        <p style="font-size: 14px; line-height: 1.75; color: #6a5f54; margin: 0;">A Dra. Karin Toledo é oftalmologista especializada em Plástica Ocular e Vias Lacrimais, membro da SBCPO. Essa região é exatamente o que ela opera há 25 anos. A lipoenxertia periorbital em suas mãos não é um complemento — é extensão direta da sua especialidade.</p>
+      </div>
+      <div style="padding: 32px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 12px;">
+        <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; color: #38322c; margin: 0 0 16px;">O que trata</h3>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Sulco nasojugal profundo (sulco lacrimal)</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Olheira estrutural causada por perda de volume, não por pigmentação</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Região orbital com aparência encovada ou esquelética</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Perda de volume na sobrancelha e área supra-orbital</span></div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span><span style="font-size: 14px; color: #6a5f54; line-height: 1.6;">Descontinuidade entre pálpebra inferior e bochecha que cria sombra permanente</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 12px; overflow: hidden; margin-bottom: 28px;">
+      <div style="padding: 24px 32px; border-bottom: 1px solid rgba(196,160,124,0.18); background: rgba(225,209,193,0.18);">
+        <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 18px; color: #38322c; margin: 0;">Lipoenxertia versus preenchimento com ácido hialurônico</h3>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr;" class="hero-grid">
+        <div style="padding: 28px 32px; border-right: 1px solid rgba(196,160,124,0.18);">
+          <div style="font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: #C4A07C; font-weight: 600; margin-bottom: 14px;">Lipoenxertia (gordura autóloga)</div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: #C4A07C; font-size: 14px; line-height: 1.2; flex-shrink: 0;">✓</span><span style="font-size: 13.5px; color: #6a5f54; line-height: 1.55;">Resultado duradouro — pode ser permanente</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: #C4A07C; font-size: 14px; line-height: 1.2; flex-shrink: 0;">✓</span><span style="font-size: 13.5px; color: #6a5f54; line-height: 1.55;">Zero risco imunológico: material da própria paciente</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: #C4A07C; font-size: 14px; line-height: 1.2; flex-shrink: 0;">✓</span><span style="font-size: 13.5px; color: #6a5f54; line-height: 1.55;">Aspecto genuinamente natural a longo prazo</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: #9a8a78; font-size: 14px; line-height: 1.2; flex-shrink: 0;">—</span><span style="font-size: 13.5px; color: #9a8a78; line-height: 1.55;">Exige procedimento com coleta de gordura</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: #9a8a78; font-size: 14px; line-height: 1.2; flex-shrink: 0;">—</span><span style="font-size: 13.5px; color: #9a8a78; line-height: 1.55;">Indicada para perdas de volume moderadas a significativas</span></div>
+          </div>
+        </div>
+        <div style="padding: 28px 32px;">
+          <div style="font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: #9a8a78; font-weight: 600; margin-bottom: 14px;">Ácido hialurônico</div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: #C4A07C; font-size: 14px; line-height: 1.2; flex-shrink: 0;">✓</span><span style="font-size: 13.5px; color: #6a5f54; line-height: 1.55;">Resultado imediato e reversível</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: #C4A07C; font-size: 14px; line-height: 1.2; flex-shrink: 0;">✓</span><span style="font-size: 13.5px; color: #6a5f54; line-height: 1.55;">Sem procedimento de coleta de gordura</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: #9a8a78; font-size: 14px; line-height: 1.2; flex-shrink: 0;">—</span><span style="font-size: 13.5px; color: #9a8a78; line-height: 1.55;">Duração de 6 a 18 meses</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: #9a8a78; font-size: 14px; line-height: 1.2; flex-shrink: 0;">—</span><span style="font-size: 13.5px; color: #9a8a78; line-height: 1.55;">Risco de efeito Tyndall (coloração azulada)</span></div>
+            <div style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: #9a8a78; font-size: 14px; line-height: 1.2; flex-shrink: 0;">—</span><span style="font-size: 13.5px; color: #9a8a78; line-height: 1.55;">Indicado para casos leves ou como avaliação prévia</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding: 36px 40px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 12px; margin-bottom: 28px;">
+      <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; color: #38322c; margin: 0 0 28px;">Recuperação</h3>
+      <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0;" class="hero-grid">
+        <div style="padding: 0 20px 0 0; border-right: 1px solid rgba(196,160,124,0.2);"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">Dias 1–10</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Inchaço periorbital. Área doadora com equimose discreta.</p></div>
+        <div style="padding: 0 20px; border-right: 1px solid rgba(196,160,124,0.2);"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">10–14 dias</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Maioria das pacientes retoma vida social.</p></div>
+        <div style="padding: 0 20px; border-right: 1px solid rgba(196,160,124,0.2);"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">3–4 semanas</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Resultado inicial visível. Gordura em integração.</p></div>
+        <div style="padding: 0 20px; border-right: 1px solid rgba(196,160,124,0.2);"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">3–6 meses</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Resultado definitivo. O que permanece tende a ser duradouro.</p></div>
+        <div style="padding: 0 0 0 20px;"><div style="font-family: 'Fraunces', serif; font-size: 13px; color: #C4A07C; font-weight: 500; margin-bottom: 8px;">2ª sessão</div><p style="font-size: 13px; line-height: 1.6; color: #6a5f54; margin: 0;">Pode ser prevista para complementar volume. Planejada desde a consulta.</p></div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+      <h3 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 26px; color: #38322c; margin: 0 0 4px;">Perguntas frequentes</h3>
+      <p style="font-size: 14px; color: #82766a; margin: 0 0 24px;">Lipoenxertia periorbital</p>
+      <div style="border-top: 1px solid rgba(196,160,124,0.35);">
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Toda a gordura injetada permanece?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 8px;max-width:66ch;">Não. Uma parte da gordura é naturalmente reabsorvida nas primeiras semanas — isso é esperado e já é considerado no planejamento. O volume que se integra ao tecido tende a ser permanente. Em média, a taxa de permanência varia entre 40% e 70%.</p><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">Por isso, em alguns casos, está prevista uma segunda sessão complementar após avaliação do resultado inicial.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Dói muito a coleta de gordura?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">A coleta é feita com anestesia local na área doadora. O desconforto no pós-operatório é comparável ao de uma pequena lipoaspiração — inchaço e sensibilidade local por alguns dias. A região doadora costuma incomodar menos do que a área tratada.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Qual a diferença entre lipoenxertia periorbital e lipoenxertia facial geral?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">A lipoenxertia facial é aplicada em múltiplas regiões do rosto. A periorbital é específica para a região ao redor dos olhos: pálpebras, sulco lacrimal, sobrancelha e área orbital. Essa especificidade exige formação diferente — a anatomia periorbital demanda o tipo de conhecimento que a especialização em Plástica Ocular proporciona.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Posso fazer depois de já ter feito preenchimento na mesma região?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">Depende do preenchimento e do tempo desde a aplicação. Em muitos casos sim — com o planejamento adequado. A avaliação individual define se há contraindicação e qual o tempo de espera recomendado.</p></div></div>
+        <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);"><button class="faq-q" type="button" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 0;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;font-family:'Montserrat',sans-serif;"><span style="font-size:15.5px;font-weight:500;color:#38322c;line-height:1.4;">Como é a consulta de avaliação para lipoenxertia?</span><span class="faq-icon" style="flex-shrink:0;font-size:22px;color:#C4A07C;line-height:1;transition:transform 0.3s ease;margin-top:2px;">+</span></button><div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;"><p style="font-size:14.5px;line-height:1.75;color:#6a5f54;margin:0 0 22px;max-width:66ch;">A consulta avalia a anatomia periorbital, o volume de perda, o histórico de procedimentos anteriores e o que a paciente quer alcançar. A partir disso, o plano é construído: lipoenxertia isolada, combinada com blefaroplastia, ou um caminho em etapas. Não existe indicação padrão.</p></div></div>
+      </div>
+    </div>
+
+    <a href="#agende" class="btn-dark" style="display: inline-flex; align-items: center; gap: 12px; background: #414141; color: #FBF6EF; font-size: 14.5px; font-weight: 500; padding: 17px 32px; border-radius: 100px; transition: background 0.2s;">Agendar avaliação →</a>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="agende" style="background: rgba(225,209,193,0.32); border-top: 1px solid rgba(196,160,124,0.25);">
+    <div style="max-width: 860px; margin: 0 auto; padding: 96px 40px; text-align: center;" class="pad" data-reveal>
+      <span style="font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: #C4A07C; font-weight: 600;">Agende sua avaliação</span>
+      <h2 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 38px; line-height: 1.15; color: #38322c; margin: 18px 0 18px; text-wrap: balance;">Toda indicação começa com uma conversa.</h2>
+      <p style="font-size: 16px; line-height: 1.75; color: #6a5f54; margin: 0 auto 36px; max-width: 46ch;">Na avaliação, entendo o seu caso, apresento as opções e construímos juntas o plano adequado — sem compromisso prévio com nenhum procedimento.</p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="https://wa.me/552190392888" class="btn-dark" style="display: inline-flex; align-items: center; gap: 10px; background: #414141; color: #FBF6EF; font-size: 14.5px; font-weight: 500; padding: 17px 32px; border-radius: 100px; transition: background 0.2s;">WhatsApp · (21) 9039-2888</a>
+        <a href="https://instagram.com/dra.karintoledo" class="btn-outline" style="display: inline-flex; align-items: center; gap: 10px; background: transparent; color: #5c5249; border: 1px solid rgba(65,65,65,0.25); font-size: 14.5px; font-weight: 500; padding: 17px 32px; border-radius: 100px; transition: border-color 0.2s, color 0.2s;">@dra.karintoledo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: #2e2a26; color: #d3bfa6;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 64px 40px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between;" class="pad">
+      <div>
+        <div style="font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500; color: #FBF6EF; line-height: 1;">Dra. Karin Toledo</div>
+        <div style="font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: #C4A07C; margin-top: 8px;">PLÁSTICA OCULAR</div>
+      </div>
+      <div style="font-size: 13px; line-height: 1.9; color: #b9a890; text-align: right;">
+        CRM 5269246-8 · Membro da SBCPO<br>
+        Leblon · Ipanema · Icaraí · (21) 9039-2888
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ accordion
+    document.addEventListener('click', function(e) {
+      const btn = e.target.closest('.faq-q');
+      if (!btn) return;
+      const item = btn.closest('.faq-item');
+      const ans = item.querySelector('.faq-a');
+      const icon = btn.querySelector('.faq-icon');
+      const isOpen = ans.style.maxHeight && ans.style.maxHeight !== '0px';
+      ans.style.maxHeight = isOpen ? '0px' : ans.scrollHeight + 'px';
+      icon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(45deg)';
+    });
+
+    window.addEventListener('resize', function() {
+      document.querySelectorAll('.faq-a').forEach(function(a) {
+        if (a.style.maxHeight && a.style.maxHeight !== '0px') {
+          a.style.maxHeight = a.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Scroll to hash on load
+    if (window.location.hash) {
+      var hash = window.location.hash;
+      setTimeout(function() {
+        var el = document.querySelector(hash);
+        if (el) {
+          var top = el.getBoundingClientRect().top + window.scrollY - 90;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      }, 100);
+    }
+
+    // Scroll reveal
+    var noMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!noMotion) {
+      var revealObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) { e.target.classList.add('revealed'); revealObs.unobserve(e.target); }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+      document.querySelectorAll('[data-reveal],[data-reveal-group]').forEach(function(el) {
+        revealObs.observe(el);
+      });
+    }
+
+    // Parallax
+    var rafPending = false;
+    function parallaxTick() {
+      document.querySelectorAll('[data-parallax]').forEach(function(el) {
+        var rect = el.getBoundingClientRect();
+        var vh = window.innerHeight;
+        if (rect.bottom < -300 || rect.top > vh + 300) return;
+        var base = parseFloat(el.dataset.parallaxBase || '50');
+        var offset = ((vh - rect.top) / (vh + rect.height) - 0.5) * 80;
+        el.style.backgroundPositionY = 'calc(' + base + '% + ' + offset.toFixed(1) + 'px)';
+      });
+    }
+    window.addEventListener('scroll', function() {
+      if (rafPending) return;
+      rafPending = true;
+      requestAnimationFrame(function() { rafPending = false; parallaxTick(); });
+    }, { passive: true });
+    parallaxTick();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dra. Karin Toledo — Plástica Ocular e Vias Lacrimais</title>
+  <meta name="description" content="Oftalmologista especializada em Plástica Ocular e Vias Lacrimais. Blefaroplastia, lipoenxertia periorbital e cirurgia de vias lacrimais. Leblon, Ipanema e Icaraí.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #FBF6EF; font-family: 'Montserrat', sans-serif; color: #4a4038; overflow-x: hidden; }
+    ::selection { background: #C4A07C; color: #fff; }
+    html { scroll-behavior: smooth; }
+    section[id], footer { scroll-margin-top: 84px; }
+    h1, h2, h3 { margin: 0; }
+    p { margin: 0; }
+    a { text-decoration: none; }
+
+    .faq-q:hover span:first-child { color: #9a7e5f; }
+
+    /* ── Hover states ── */
+    .btn-dark:hover { background: #C4A07C !important; }
+    .card-service:hover { border-color: #C4A07C !important; box-shadow: 0 8px 32px -8px rgba(196,160,124,0.25) !important; }
+    .card-dark:hover { box-shadow: 0 8px 32px -8px rgba(196,160,124,0.4) !important; }
+    .btn-outline:hover { border-color: #C4A07C !important; color: #38322c !important; }
+
+    /* ── 860 px ── */
+    @media (max-width: 860px) {
+      div[style*="grid-template-columns: 1.05fr"],
+      div[style*="grid-template-columns: 0.85fr"],
+      div[style*="grid-template-columns: 1fr 1fr"],
+      div[style*="grid-template-columns: repeat(4"],
+      div[style*="grid-template-columns: repeat(3"] {
+        grid-template-columns: 1fr !important;
+      }
+      [data-navlinks] a:not(:last-child) { display: none !important; }
+      nav { padding-left: 22px !important; padding-right: 22px !important; }
+      section#home {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        padding: 48px 22px 60px !important;
+      }
+      h1 { font-size: 38px !important; }
+      h1 span { font-size: 32px !important; }
+      h2 { font-size: 30px !important; }
+      [data-photo="hero"] { width: 100% !important; height: auto !important; }
+      section[data-section="why-choose"] { padding: 64px 22px !important; }
+      section[data-section="quote"] > div:last-child { padding: 72px 28px !important; }
+      section[data-section="quote"] p[style*="font-size: 34px"] { font-size: 22px !important; }
+      section[data-section="quote"] span[style*="font-size: 60px"] { font-size: 40px !important; }
+      section#sobre { padding: 72px 22px !important; }
+      [data-photo="sobre"] { position: static !important; }
+      section#sobre > div > div:first-child { position: static !important; }
+      section#servicos > div { padding: 72px 22px !important; }
+      section#faq { padding: 72px 22px !important; }
+      section#agende > div { padding: 72px 22px !important; }
+      section#agende div[style*="aspect-ratio: 4/5"] { max-height: 320px; }
+      footer > div { padding-left: 22px !important; padding-right: 22px !important; }
+      section { overflow: hidden; }
+    }
+
+    /* ── 520 px ── */
+    @media (max-width: 520px) {
+      nav { padding-left: 18px !important; padding-right: 18px !important; }
+      section#home { padding: 36px 18px 48px !important; }
+      section#sobre, section#faq { padding-left: 18px !important; padding-right: 18px !important; }
+      section > div { padding-left: 18px !important; padding-right: 18px !important; }
+      footer > div { padding-left: 18px !important; padding-right: 18px !important; }
+      h1 { font-size: 28px !important; }
+      h1 span { font-size: 22px !important; }
+      h2 { font-size: 22px !important; }
+      section { padding-left: 0 !important; padding-right: 0 !important; }
+    }
+
+    /* ── Scroll reveal ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(26px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    [data-reveal] { opacity: 0; }
+    [data-reveal].revealed { animation: fadeUp 0.75s cubic-bezier(0.22,1,0.36,1) both; }
+    [data-reveal][data-reveal-delay="1"].revealed { animation-delay: 0.12s; }
+    [data-reveal][data-reveal-delay="2"].revealed { animation-delay: 0.24s; }
+    [data-reveal-group] > * { opacity: 0; }
+    [data-reveal-group].revealed > *:nth-child(1) { animation: fadeUp 0.7s 0.00s cubic-bezier(0.22,1,0.36,1) both; }
+    [data-reveal-group].revealed > *:nth-child(2) { animation: fadeUp 0.7s 0.10s cubic-bezier(0.22,1,0.36,1) both; }
+    [data-reveal-group].revealed > *:nth-child(3) { animation: fadeUp 0.7s 0.20s cubic-bezier(0.22,1,0.36,1) both; }
+    [data-reveal-group].revealed > *:nth-child(4) { animation: fadeUp 0.7s 0.30s cubic-bezier(0.22,1,0.36,1) both; }
+    @media (prefers-reduced-motion: reduce) {
+      [data-reveal], [data-reveal-group] > * { opacity: 1 !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header style="position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(251,246,239,0.82); border-bottom: 1px solid rgba(65,65,65,0.08);">
+    <nav style="max-width: 1240px; margin: 0 auto; padding: 18px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+      <a href="#home" style="text-decoration: none; display: flex; flex-direction: column; line-height: 1;">
+        <span style="font-family: 'Fraunces', serif; font-size: 21px; font-weight: 500; color: #3a342e; letter-spacing: 0.3px;">Dra. Karin Toledo</span>
+        <span style="font-size: 10px; letter-spacing: 2.4px; text-transform: uppercase; color: #C4A07C; margin-top: 5px; font-weight: 500;">PLÁSTICA OCULAR</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 36px;" data-navlinks>
+        <a href="#sobre" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">Sobre</a>
+        <a href="#servicos" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">Procedimentos</a>
+        <a href="#faq" style="color: #5c5249; font-size: 13.5px; font-weight: 500; letter-spacing: 0.4px;">Dúvidas</a>
+        <a href="#agende" class="btn-dark" style="background: #414141; color: #FBF6EF; font-size: 13px; font-weight: 500; letter-spacing: 0.4px; padding: 11px 22px; border-radius: 100px; transition: background 0.2s;">Agende sua avaliação</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" style="max-width: 1240px; margin: 0 auto; padding: 72px 40px 96px; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 72px; align-items: center;">
+    <div data-reveal>
+      <div style="display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px; border: 1px solid rgba(196,160,124,0.5); border-radius: 100px; margin-bottom: 32px;">
+        <span style="width: 6px; height: 6px; border-radius: 50%; background: #C4A07C;"></span>
+        <span style="font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; color: #9a7e5f; font-weight: 500;">Leblon · Ipanema · Icaraí</span>
+      </div>
+      <h1 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 56px; line-height: 1.04; letter-spacing: -0.5px; color: #38322c; margin: 0 0 28px; text-wrap: balance;">Você não quer mudar. Quer se reconhecer.<br><span style="color: #82766a; font-size: 48px;">O olhar que o tempo alterou pode voltar a ser o seu.</span></h1>
+      <p style="font-size: 16px; line-height: 1.8; color: #6a5f54; margin: 0 0 40px; max-width: 36em;">Sou a Dra. Karin Toledo, oftalmologista especializada em Plástica Ocular e Vias Lacrimais. Atendo no Leblon e em Icaraí. Membro da SBCPO, dedico 25 anos a um único objetivo: devolver ao olhar de cada paciente aquilo que é dela, com a precisão de quem só opera essa região do rosto.</p>
+      <div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
+        <a href="#agende" class="btn-dark" style="display: inline-flex; align-items: center; gap: 12px; background: #414141; color: #FBF6EF; font-size: 14.5px; font-weight: 500; letter-spacing: 0.3px; padding: 17px 30px; border-radius: 100px; transition: background 0.2s;">
+          Agende sua avaliação
+          <span style="font-size: 16px;">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div style="position: relative;" data-reveal data-reveal-delay="1">
+      <div data-photo="hero" data-parallax data-parallax-base="20" style="aspect-ratio: 4/5; border-radius: 8px; overflow: hidden; background: #E1D1C1 url('images/hero.jpg') center 20% / cover no-repeat; border: 1px solid rgba(196,160,124,0.4); box-shadow: 0 30px 70px -36px rgba(65,65,65,0.5); width: 575px; height: 713px;"></div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE ME -->
+  <section data-section="why-choose" style="max-width: 1240px; margin: 0 auto; padding: 110px 40px 100px;">
+    <div style="text-align: center; max-width: 620px; margin: 0 auto 64px;" data-reveal>
+      <h2 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 38px; line-height: 1.15; color: #38322c; margin: 18px 0 0; text-wrap: balance;">Presença em cada etapa.<div>&nbsp;Da consulta ao resultado definitivo.</div></h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px;" data-reveal-group>
+      <div style="padding: 32px 26px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 10px;">
+        <div style="font-family: 'Fraunces', serif; font-size: 22px; color: #C4A07C; margin-bottom: 18px;">01</div>
+        <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 19px; color: #38322c; margin: 0 0 12px; line-height: 1.25;">Especialidade focada</h3>
+        <p style="font-size: 14px; line-height: 1.65; color: #82766a;">Oftalmologista especializada em Plástica Ocular e Vias Lacrimais, com foco dedicado à região periorbital há 25 anos.</p>
+      </div>
+      <div style="padding: 32px 26px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 10px;">
+        <div style="font-family: 'Fraunces', serif; font-size: 22px; color: #C4A07C; margin-bottom: 18px;">02</div>
+        <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 19px; color: #38322c; margin: 0 0 12px; line-height: 1.25;">Resultado sem marcas</h3>
+        <p style="font-size: 14px; line-height: 1.65; color: #82766a;">A cirurgia certa parece descanso natural, não intervenção.</p>
+      </div>
+      <div style="padding: 32px 26px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 10px;">
+        <div style="font-family: 'Fraunces', serif; font-size: 22px; color: #C4A07C; margin-bottom: 18px;">03</div>
+        <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 19px; color: #38322c; margin: 0 0 12px; line-height: 1.25;">Técnicas de ponta</h3>
+        <p style="font-size: 14px; line-height: 1.65; color: #82766a;">Blefaroplastia, lipoenxertia periorbital e cirurgia de vias lacrimais com protocolos atualizados continuamente.</p>
+      </div>
+      <div style="padding: 32px 26px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 10px;">
+        <div style="font-family: 'Fraunces', serif; font-size: 22px; color: #C4A07C; margin-bottom: 18px;">04</div>
+        <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 19px; color: #38322c; margin: 0 0 12px; line-height: 1.25;">Atendimento dedicado</h3>
+        <p style="font-size: 14px; line-height: 1.65; color: #82766a;">Da avaliação ao resultado definitivo, com acompanhamento real em cada etapa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDENTITY QUOTE -->
+  <section data-section="quote" style="position: relative; background: #2e2a26; color: #FBF6EF; overflow: hidden;">
+    <div data-parallax data-parallax-base="28" style="position: absolute; inset: 0; background: url('images/cirurgia-wide.jpg') center 28% / cover no-repeat;"></div>
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(46,42,38,0.80) 0%, rgba(46,42,38,0.88) 100%);"></div>
+    <div style="position: relative; max-width: 980px; margin: 0 auto; padding: 130px 40px; text-align: center;" data-reveal>
+      <span style="font-family: 'Fraunces', serif; font-size: 60px; color: #D8B891; line-height: 0; display: block; height: 24px;">"</span>
+      <p style="font-family: 'Fraunces', serif; font-weight: 300; font-size: 34px; line-height: 1.4; color: #F6EEE3; margin: 0; font-style: italic; text-wrap: balance;">Minha paciente não quer parecer mais nova. Quer se olhar no espelho e se reconhecer.</p>
+      <div style="margin-top: 36px; font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase; color: #d3bfa6;">Dra. Karin Toledo</div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" style="max-width: 1240px; margin: 0 auto; padding: 120px 40px;">
+    <div style="display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 80px; align-items: start;">
+      <div style="position: sticky; top: 100px;" data-reveal>
+        <div data-photo="sobre" style="aspect-ratio: 3/4; border-radius: 8px; overflow: hidden; background: #E1D1C1 url('images/sobre.jpg') center 30% / cover no-repeat; border: 1px solid rgba(196,160,124,0.4); box-shadow: 0 30px 70px -36px rgba(65,65,65,0.5);"></div>
+      </div>
+      <div data-reveal data-reveal-delay="1">
+        <span style="font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: #C4A07C; font-weight: 600;">Sobre</span>
+        <h2 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 36px; line-height: 1.2; color: #38322c; margin: 18px 0 32px; text-wrap: balance;">Oftalmologista especializada em Plástica Ocular e Vias Lacrimais. 25 anos dedicados ao olhar.</h2>
+        <div style="font-size: 16px; line-height: 1.8; color: #6a5f54; display: flex; flex-direction: column; gap: 20px;">
+          <p>Há 25 anos, escolhi me especializar em uma única região do corpo humano: o olhar. Não foi uma limitação. Foi uma decisão de profundidade.</p>
+          <p>A região ao redor dos olhos é onde o tempo aparece primeiro e onde qualquer imperfeição técnica é imediatamente percebida. Operar bem aqui exige mais do que habilidade cirúrgica. Exige compreensão fina da anatomia orbital, do comportamento da pele da pálpebra e do que cada paciente realmente carrega quando chega ao consultório.</p>
+          <p>Como especialista em Plástica Ocular e Vias Lacrimais e membro da SBCPO, trabalho com um princípio simples: o resultado de uma boa cirurgia não tem assinatura. Ninguém percebe o procedimento. Percebem você.</p>
+          <p>Sou triatleta. Quem me conhece sabe que disciplina e precisão não ficam no treino. São valores que eu não abro mão.</p>
+        </div>
+
+        <div style="margin-top: 44px; padding: 32px; background: #fff; border: 1px solid rgba(196,160,124,0.25); border-radius: 10px;">
+          <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 18px; color: #38322c; margin: 0 0 22px;">Credenciais</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px 32px;">
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <span style="font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; color: #C4A07C;">Oftalmologista</span>
+              <span style="font-size: 14.5px; color: #4a4038; font-weight: 500;">CRM 5269246-8</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <span style="font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; color: #C4A07C;">Especialização</span>
+              <span style="font-size: 14.5px; color: #4a4038; font-weight: 500;">Plástica Ocular e Vias Lacrimais</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <span style="font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; color: #C4A07C;">Sociedade</span>
+              <span style="font-size: 14.5px; color: #4a4038; font-weight: 500;">Membro da SBCPO</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <span style="font-size: 11px; letter-spacing: 1.2px; text-transform: uppercase; color: #C4A07C;">Formação</span>
+              <span style="font-size: 14.5px; color: #b3a392; font-weight: 500; font-style: italic;">a completar</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 28px; padding-left: 24px; border-left: 2px solid #C4A07C;">
+          <p style="font-family: 'Fraunces', serif; font-style: italic; font-size: 19px; line-height: 1.5; color: #5c5249;">"O resultado de uma boa cirurgia não tem assinatura. Ninguém percebe o procedimento. Percebem você."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" style="background: rgba(225,209,193,0.28); border-top: 1px solid rgba(196,160,124,0.25); border-bottom: 1px solid rgba(196,160,124,0.25);">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 120px 40px;">
+      <div style="max-width: 660px; margin: 0 0 64px;" data-reveal>
+        <span style="font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: #C4A07C; font-weight: 600;">ESPECIALIDADES</span>
+        <h2 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 38px; line-height: 1.15; color: #38322c; margin: 18px 0 18px; text-wrap: balance;">Cada indicação parte de uma avaliação individual.</h2>
+      </div>
+
+      <!-- Flagship cards -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 24px;" data-reveal-group>
+
+        <a href="procedimentos.html#blefaro-superior" class="card-service" style="background: #fff; border: 1px solid rgba(196,160,124,0.3); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.2s, box-shadow 0.2s;">
+          <div style="height: 210px; background: #E1D1C1 url('images/blefaro-superior.jpg') center 20% / cover no-repeat;"></div>
+          <div style="padding: 32px; display: flex; flex-direction: column; flex: 1;">
+            <span style="font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: #C4A07C; font-weight: 600;">Pálpebra superior</span>
+            <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 25px; line-height: 1.15; color: #38322c; margin: 12px 0 16px;">Blefaroplastia Superior</h3>
+            <p style="font-size: 14.5px; line-height: 1.7; color: #6a5f54; margin: 0 0 24px;">A blefaroplastia superior remove o excesso de pele da pálpebra superior: aquela dobra que altera a expressão natural do olhar, dá aparência de cansaço e, em casos mais avançados, compromete a visão periférica.</p>
+            <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px; padding-top: 22px; border-top: 1px solid rgba(196,160,124,0.25);">
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 13px;"><span style="color: #9a8a78;">Anestesia</span><span style="color: #4a4038; font-weight: 500; text-align: right;">Local · ambulatorial</span></div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 13px;"><span style="color: #9a8a78;">Pós-operatório</span><span style="color: #4a4038; font-weight: 500; text-align: right;">7 a 14 dias</span></div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 13px;"><span style="color: #9a8a78;">Resultado completo</span><span style="color: #4a4038; font-weight: 500; text-align: right;">a partir de 3 meses</span></div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 13px;"><span style="color: #9a8a78;">Cicatriz</span><span style="color: #4a4038; font-weight: 500; text-align: right;">oculta na dobra</span></div>
+              <span style="margin-top: 6px; font-size: 13.5px; font-weight: 500; color: #C4A07C; display: inline-flex; align-items: center; gap: 6px;">Agende sua avaliação →</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="procedimentos.html#blefaro-inferior" class="card-service" style="background: #fff; border: 1px solid rgba(196,160,124,0.3); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.2s, box-shadow 0.2s;">
+          <div style="height: 210px; background: #E1D1C1 url('images/blefaro-inferior.jpg') center / cover no-repeat;"></div>
+          <div style="padding: 32px; display: flex; flex-direction: column; flex: 1;">
+            <span style="font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: #C4A07C; font-weight: 600;">Pálpebra inferior</span>
+            <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 25px; line-height: 1.15; color: #38322c; margin: 12px 0 16px;">Blefaroplastia Inferior</h3>
+            <p style="font-size: 14.5px; line-height: 1.7; color: #6a5f54; margin: 0 0 24px;">A blefaroplastia inferior trata bolsas de gordura na pálpebra inferior, responsáveis por aquela aparência de cansaço permanente que não melhora com sono, hidratação ou cuidados tópicos.</p>
+            <div style="margin-top: auto; padding-top: 22px; border-top: 1px solid rgba(196,160,124,0.25);">
+              <span style="font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: #C4A07C; font-weight: 600;">Diferencial técnico</span>
+              <p style="font-size: 13.5px; line-height: 1.65; color: #6a5f54; margin: 10px 0 16px;">Quando feita pela parte interna da pálpebra (via transconjuntival), não há cicatriz visível na pele. Essa abordagem produz resultados mais naturais e é utilizada por especialistas com formação específica em plástica ocular.</p>
+              <span style="font-size: 13.5px; font-weight: 500; color: #C4A07C; display: inline-flex; align-items: center; gap: 6px;">Agende sua avaliação →</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="procedimentos.html#lipoenxertia" class="card-dark" style="background: #414141; border: 1px solid #414141; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; color: #F4EBE0; transition: box-shadow 0.2s;">
+          <div style="height: 210px; background: #2e2a26 url('images/lipoenxertia.jpg') center 57% / cover no-repeat;"></div>
+          <div style="padding: 32px; display: flex; flex-direction: column; flex: 1;">
+            <span style="font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: #D8B891; font-weight: 600;">Fat Grafting</span>
+            <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 25px; line-height: 1.15; color: #fff; margin: 12px 0 16px;">Lipoenxertia Periorbital</h3>
+            <p style="font-size: 14.5px; line-height: 1.7; color: #d6c8ba; margin: 0 0 24px;">Usa gordura da própria paciente para restaurar o volume que a região dos olhos perde com o envelhecimento. Trata olheira estrutural, sulco lacrimal profundo e aspecto encovado — sem materiais sintéticos, sem implantes.</p>
+            <div style="margin-top: auto; padding-top: 22px; border-top: 1px solid rgba(216,184,145,0.3);">
+              <span style="font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: #D8B891; font-weight: 600;">Por que escolher</span>
+              <p style="font-size: 13.5px; line-height: 1.65; color: #d6c8ba; margin: 10px 0 16px;">A gordura autóloga tem durabilidade muito superior ao ácido hialurônico. Quando bem integrada, o resultado pode ser permanente. Não há risco imunológico e o aspecto é genuinamente natural.</p>
+              <span style="font-size: 13.5px; font-weight: 500; color: #D8B891; display: inline-flex; align-items: center; gap: 6px;">Agende sua avaliação →</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Secondary cards -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;" data-reveal-group>
+        <article style="background: #fff; border: 1px solid rgba(196,160,124,0.3); border-radius: 12px; padding: 30px 28px;">
+          <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; line-height: 1.2; color: #38322c; margin: 0 0 12px;">Correção de Ptose Palpebral</h3>
+          <p style="font-size: 13.5px; line-height: 1.65; color: #6a5f54;">Ptose palpebral é a queda real da pálpebra superior causada por fraqueza ou desinserção do músculo elevador. O diagnóstico correto define o procedimento: tratar ptose com técnica de blefaroplastia gera resultados insatisfatórios.</p>
+        </article>
+        <article style="background: #fff; border: 1px solid rgba(196,160,124,0.3); border-radius: 12px; padding: 30px 28px;">
+          <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; line-height: 1.2; color: #38322c; margin: 0 0 12px;">Cirurgia de Vias Lacrimais</h3>
+          <p style="font-size: 13.5px; line-height: 1.65; color: #6a5f54;">Procedimentos nas vias lacrimais corrigem obstruções que causam lacrimejamento excessivo (epífora), infecções recorrentes (dacriocistite) e desconforto crônico. A especialização cobre tanto a função quanto a estética desse sistema.</p>
+        </article>
+        <article style="background: #fff; border: 1px solid rgba(196,160,124,0.3); border-radius: 12px; padding: 30px 28px;">
+          <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 20px; line-height: 1.2; color: #38322c; margin: 0 0 12px;">Consulta de Avaliação</h3>
+          <p style="font-size: 13.5px; line-height: 1.65; color: #6a5f54;">Toda indicação cirúrgica começa com avaliação individual. Analiso saúde ocular, anatomia palpebral, simetria e o que cada paciente realmente precisa para aquele momento. Não existe protocolo padrão: existe o olhar de cada pessoa.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="max-width: 920px; margin: 0 auto; padding: 120px 40px;">
+    <div style="margin-bottom: 56px;" data-reveal>
+      <span style="font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: #C4A07C; font-weight: 600;">Perguntas frequentes</span>
+      <h2 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 38px; line-height: 1.15; color: #38322c; margin: 18px 0 16px; text-wrap: balance;">O que você precisa saber&nbsp;<div>sobre os procedimentos.</div></h2>
+    </div>
+
+    <div id="faq-list" style="border-top: 1px solid rgba(196,160,124,0.35);">
+
+      <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);">
+        <button class="faq-q" type="button" style="width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 26px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; font-family: 'Montserrat', sans-serif;">
+          <span style="font-size: 17px; font-weight: 500; color: #38322c; line-height: 1.4;">O que faz uma blefaroplastia ter resultado natural?</span>
+          <span class="faq-icon" style="flex-shrink: 0; font-size: 22px; color: #C4A07C; line-height: 1; transition: transform 0.3s ease; margin-top: 2px;">+</span>
+        </button>
+        <div class="faq-a" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 8px; max-width: 62ch;">A naturalidade em uma blefaroplastia depende de três fatores: diagnóstico correto (saber exatamente o que está sendo tratado), técnica adequada ao caso e respeito à anatomia individual de cada pálpebra.</p>
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 26px; max-width: 62ch;">Uma blefaroplastia bem-feita não muda a expressão da paciente. Ela restaura uma versão anterior dela mesma: mais descansada, mais leve, reconhecivelmente ela. Quando o resultado chama atenção pelo procedimento, algo foi feito além do necessário.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);">
+        <button class="faq-q" type="button" style="width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 26px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; font-family: 'Montserrat', sans-serif;">
+          <span style="font-size: 17px; font-weight: 500; color: #38322c; line-height: 1.4;">Qual a diferença entre fazer blefaroplastia com uma especialista em Plástica Ocular e com um cirurgião plástico geral?</span>
+          <span class="faq-icon" style="flex-shrink: 0; font-size: 22px; color: #C4A07C; line-height: 1; transition: transform 0.3s ease; margin-top: 2px;">+</span>
+        </button>
+        <div class="faq-a" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 8px; max-width: 62ch;">A região periorbital é a mais complexa do rosto para operar. A pele das pálpebras tem espessura diferente do restante da face. As estruturas musculares e orbitais ao redor do olho exigem conhecimento anatômico específico que a formação em cirurgia plástica geral não aprofunda da mesma forma.</p>
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 26px; max-width: 62ch;">A Dra. Karin Toledo é especialista em Plástica Ocular e Vias Lacrimais e membro da SBCPO. Essa região é o que ela opera há 25 anos, com exclusividade. É uma diferença de foco e de profundidade técnica.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);">
+        <button class="faq-q" type="button" style="width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 26px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; font-family: 'Montserrat', sans-serif;">
+          <span style="font-size: 17px; font-weight: 500; color: #38322c; line-height: 1.4;">Posso combinar blefaroplastia com lipoenxertia periorbital?</span>
+          <span class="faq-icon" style="flex-shrink: 0; font-size: 22px; color: #C4A07C; line-height: 1; transition: transform 0.3s ease; margin-top: 2px;">+</span>
+        </button>
+        <div class="faq-a" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 8px; max-width: 62ch;">Sim, e essa combinação produz resultados mais completos de rejuvenescimento ocular. A blefaroplastia remove o excesso de pele e, em alguns casos, reposiciona a gordura da pálpebra. A lipoenxertia, por sua vez, restaura o volume perdido ao redor dos olhos, que é o que dá a aparência de profundidade e cansaço mesmo depois da blefaroplastia.</p>
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 26px; max-width: 62ch;">Os dois procedimentos se complementam. A indicação de fazê-los juntos ou separados depende da avaliação de cada caso.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);">
+        <button class="faq-q" type="button" style="width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 26px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; font-family: 'Montserrat', sans-serif;">
+          <span style="font-size: 17px; font-weight: 500; color: #38322c; line-height: 1.4;">O que é lipoenxertia periorbital e como ela se diferencia do preenchimento?</span>
+          <span class="faq-icon" style="flex-shrink: 0; font-size: 22px; color: #C4A07C; line-height: 1; transition: transform 0.3s ease; margin-top: 2px;">+</span>
+        </button>
+        <div class="faq-a" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+          <div style="margin: 0 0 26px; max-width: 62ch;">
+            <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 12px;"><strong style="color:#4a4038; font-weight:600;">Lipoenxertia (gordura própria):</strong> usa gordura da própria paciente para restaurar volume ao redor dos olhos. O resultado pode ser permanente, não apresenta risco imunológico e tem aspecto genuinamente natural.</p>
+            <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0;"><strong style="color:#4a4038; font-weight:600;">Preenchimento com ácido hialurônico:</strong> reversível, duração de 6 a 18 meses. É uma alternativa para casos leves ou para quem quer avaliar o resultado antes de um procedimento definitivo. A escolha depende do volume de perda e das expectativas de cada paciente.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);">
+        <button class="faq-q" type="button" style="width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 26px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; font-family: 'Montserrat', sans-serif;">
+          <span style="font-size: 17px; font-weight: 500; color: #38322c; line-height: 1.4;">Tenho receio de ficar com aparência operada. Como garantir naturalidade?</span>
+          <span class="faq-icon" style="flex-shrink: 0; font-size: 22px; color: #C4A07C; line-height: 1; transition: transform 0.3s ease; margin-top: 2px;">+</span>
+        </button>
+        <div class="faq-a" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 8px; max-width: 62ch;">Esse é o ponto central do meu trabalho. Uma cirurgia bem-indicada e bem-executada não tem assinatura visual. O objetivo nunca é parecer que passou por um procedimento: é parecer mais ela mesma.</p>
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 26px; max-width: 62ch;">Na prática, isso começa na avaliação: entendendo o que a paciente quer preservar tanto quanto o que quer corrigir. Na cirurgia, é respeitar os limites anatômicos de cada pálpebra. No pós-operatório, é acompanhar até o resultado definitivo, que aparece com 3 meses, não com 3 semanas.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);">
+        <button class="faq-q" type="button" style="width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 26px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; font-family: 'Montserrat', sans-serif;">
+          <span style="font-size: 17px; font-weight: 500; color: #38322c; line-height: 1.4;">Como é a recuperação?</span>
+          <span class="faq-icon" style="flex-shrink: 0; font-size: 22px; color: #C4A07C; line-height: 1; transition: transform 0.3s ease; margin-top: 2px;">+</span>
+        </button>
+        <div class="faq-a" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+          <div style="margin: 0 0 26px; max-width: 62ch;">
+            <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 16px;">A recuperação tem fases distintas que é importante conhecer antes de operar:</p>
+            <ul style="margin: 0 0 16px; padding-left: 20px; color: #6a5f54; font-size: 15px; line-height: 1.7;">
+              <li style="margin-bottom: 6px;"><strong style="color:#4a4038; font-weight:600;">Dias 1–7:</strong> inchaço e hematoma intensos; repouso e afastamento social esperados.</li>
+              <li style="margin-bottom: 6px;"><strong style="color:#4a4038; font-weight:600;">Dias 7–14:</strong> hematoma dissipa; maioria das pacientes já circula com discrição.</li>
+              <li style="margin-bottom: 6px;"><strong style="color:#4a4038; font-weight:600;">1 mês:</strong> resultado inicial visível, não definitivo.</li>
+              <li><strong style="color:#4a4038; font-weight:600;">3 meses:</strong> resultado definitivo; todas as assimetrias transitórias se resolvem até esse prazo.</li>
+            </ul>
+            <p style="font-size: 15px; line-height: 1.75; color: #6a5f54;">Orientação padrão: não avalie a cirurgia antes de 3 meses. O que você vê antes disso é processo, não resultado.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);">
+        <button class="faq-q" type="button" style="width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 26px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; font-family: 'Montserrat', sans-serif;">
+          <span style="font-size: 17px; font-weight: 500; color: #38322c; line-height: 1.4;">Como saber se é o momento certo para a avaliação?</span>
+          <span class="faq-icon" style="flex-shrink: 0; font-size: 22px; color: #C4A07C; line-height: 1; transition: transform 0.3s ease; margin-top: 2px;">+</span>
+        </button>
+        <div class="faq-a" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 8px; max-width: 62ch;">Quando o olhar no espelho já não parece representar quem você é. Quando a aparência de cansaço é constante, independente do quanto dormiu ou do quanto se cuida. Quando fotos mostram algo que você não reconhece como seu.</p>
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 26px; max-width: 62ch;">Esses são os sinais que trazem as pacientes à consulta. A avaliação é o que transforma essa percepção em diagnóstico e, quando indicado, em um plano cirúrgico preciso.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);">
+        <button class="faq-q" type="button" style="width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 26px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; font-family: 'Montserrat', sans-serif;">
+          <span style="font-size: 17px; font-weight: 500; color: #38322c; line-height: 1.4;">Qual a diferença entre blefaroplastia e correção de ptose palpebral?</span>
+          <span class="faq-icon" style="flex-shrink: 0; font-size: 22px; color: #C4A07C; line-height: 1; transition: transform 0.3s ease; margin-top: 2px;">+</span>
+        </button>
+        <div class="faq-a" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 8px; max-width: 62ch;">A blefaroplastia trata excesso de pele e gordura na pálpebra. A ptose trata a queda real da pálpebra por fraqueza do músculo elevador. São causas diferentes, com técnicas cirúrgicas diferentes.</p>
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 26px; max-width: 62ch;">O diagnóstico correto na avaliação é o que define qual procedimento é indicado. Em alguns casos, os dois são feitos juntos.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" style="border-bottom: 1px solid rgba(196,160,124,0.35);">
+        <button class="faq-q" type="button" style="width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 26px 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; font-family: 'Montserrat', sans-serif;">
+          <span style="font-size: 17px; font-weight: 500; color: #38322c; line-height: 1.4;">Como é a consulta de avaliação com a Dra. Karin Toledo?</span>
+          <span class="faq-icon" style="flex-shrink: 0; font-size: 22px; color: #C4A07C; line-height: 1; transition: transform 0.3s ease; margin-top: 2px;">+</span>
+        </button>
+        <div class="faq-a" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease;">
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 8px; max-width: 62ch;">A consulta começa com avaliação oftalmológica completa: saúde ocular, função da pálpebra, simetria e anatomia individual. A partir disso, construímos juntas um plano que parte do que a paciente percebe no próprio olhar.</p>
+          <p style="font-size: 15px; line-height: 1.75; color: #6a5f54; margin: 0 0 26px; max-width: 62ch;">Não existe indicação padrão. Existe o que faz sentido para aquele olhar, naquele momento. A consulta é o espaço onde isso se define, com tempo e sem pressa.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="agende" style="background: rgba(225,209,193,0.32); border-top: 1px solid rgba(196,160,124,0.25);">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 110px 40px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;" data-reveal-group>
+        <div>
+          <span style="font-size: 11px; letter-spacing: 2.4px; text-transform: uppercase; color: #C4A07C; font-weight: 600;">Agende sua avaliação</span>
+          <h2 style="font-family: 'Fraunces', serif; font-weight: 400; font-size: 40px; line-height: 1.12; color: #38322c; margin: 18px 0 28px; text-wrap: balance;">O primeiro passo é a sua<div>avaliação.</div></h2>
+          <div style="padding-left: 24px; border-left: 2px solid #C4A07C; margin-bottom: 28px;">
+            <p style="font-family: 'Fraunces', serif; font-style: italic; font-size: 18px; line-height: 1.55; color: #5c5249; margin: 0 0 12px;">"Toda paciente minha sabe o que quer: recuperar o olhar que sempre foi dela. Meu trabalho é tornar isso possível com a precisão que essa região exige."</p>
+            <span style="font-size: 12.5px; color: #9a8a78;">— Dra. Karin Toledo</span>
+          </div>
+          <p style="font-size: 15.5px; line-height: 1.75; color: #6a5f54; margin: 0 0 36px; max-width: 38ch;">A consulta de avaliação é o ponto de partida. Nela, entendo o seu caso, apresento as opções e construímos juntas o plano adequado para o que você precisa neste momento.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+            <a href="https://wa.me/552190392888" class="btn-dark" style="display: inline-flex; align-items: center; gap: 10px; background: #414141; color: #FBF6EF; font-size: 14.5px; font-weight: 500; padding: 16px 28px; border-radius: 100px; transition: background 0.2s;">WhatsApp · (21) 9039-2888</a>
+            <a href="https://instagram.com/dra.karintoledo" class="btn-outline" style="display: inline-flex; align-items: center; gap: 10px; background: transparent; color: #5c5249; border: 1px solid rgba(65,65,65,0.25); font-size: 14.5px; font-weight: 500; padding: 16px 28px; border-radius: 100px; transition: border-color 0.2s, color 0.2s;">@dra.karintoledo</a>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 18px;">
+          <div style="aspect-ratio: 4/5; border-radius: 10px; overflow: hidden; background: #E1D1C1 url('images/consultorio.jpg') center 25% / cover no-repeat; border: 1px solid rgba(196,160,124,0.4);"></div>
+          <div style="background: #fff; border: 1px solid rgba(196,160,124,0.3); border-radius: 10px; padding: 28px 30px;">
+            <h3 style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 18px; color: #38322c; margin: 0 0 18px;">Atendimentos presenciais</h3>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span>
+                <div><div style="font-size: 14.5px; color: #4a4038; font-weight: 500;">Leblon</div><div style="font-size: 13.5px; color: #82766a; line-height: 1.5;">Rua Almirante Guilhem, 366, 5º Andar</div></div>
+              </div>
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span>
+                <div><div style="font-size: 14.5px; color: #4a4038; font-weight: 500;">Ipanema</div><div style="font-size: 13.5px; color: #82766a; line-height: 1.5;">Rua Visconde de Pirajá, 303, 9º Andar — Clínica Leblon</div></div>
+              </div>
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <span style="width: 7px; height: 7px; border-radius: 50%; background: #C4A07C; margin-top: 7px; flex-shrink: 0;"></span>
+                <div><div style="font-size: 14.5px; color: #4a4038; font-weight: 500;">Icaraí, Niterói</div><div style="font-size: 13.5px; color: #82766a; line-height: 1.5;">Rua Gavião Peixoto, 70</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: #2e2a26; color: #d3bfa6;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 64px 40px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between;">
+      <div>
+        <div style="font-family: 'Fraunces', serif; font-size: 22px; font-weight: 500; color: #FBF6EF; line-height: 1;">Dra. Karin Toledo</div>
+        <div style="font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: #C4A07C; margin-top: 8px;">PLÁSTICA OCULAR</div>
+      </div>
+      <div style="font-size: 13px; line-height: 1.9; color: #b9a890; text-align: right;">
+        CRM 5269246-8 · Membro da SBCPO<br>
+        Leblon · Ipanema · Icaraí · (21) 9039-2888
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ accordion
+    document.getElementById('faq-list').addEventListener('click', function(e) {
+      const btn = e.target.closest('.faq-q');
+      if (!btn) return;
+      const item = btn.closest('.faq-item');
+      const ans = item.querySelector('.faq-a');
+      const icon = btn.querySelector('.faq-icon');
+      const isOpen = ans.style.maxHeight && ans.style.maxHeight !== '0px';
+      if (isOpen) {
+        ans.style.maxHeight = '0px';
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        ans.style.maxHeight = ans.scrollHeight + 'px';
+        icon.style.transform = 'rotate(45deg)';
+      }
+    });
+
+    window.addEventListener('resize', function() {
+      document.querySelectorAll('.faq-a').forEach(function(a) {
+        if (a.style.maxHeight && a.style.maxHeight !== '0px') {
+          a.style.maxHeight = a.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Scroll reveal
+    var noMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!noMotion) {
+      var revealObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('revealed');
+            revealObs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+      document.querySelectorAll('[data-reveal],[data-reveal-group]').forEach(function(el) {
+        revealObs.observe(el);
+      });
+    }
+
+    // Parallax
+    var rafPending = false;
+    function parallaxTick() {
+      document.querySelectorAll('[data-parallax]').forEach(function(el) {
+        var rect = el.getBoundingClientRect();
+        var vh = window.innerHeight;
+        if (rect.bottom < -300 || rect.top > vh + 300) return;
+        var base = parseFloat(el.dataset.parallaxBase || '50');
+        var offset = ((vh - rect.top) / (vh + rect.height) - 0.5) * 80;
+        el.style.backgroundPositionY = 'calc(' + base + '% + ' + offset.toFixed(1) + 'px)';
+      });
+    }
+    window.addEventListener('scroll', function() {
+      if (rafPending) return;
+      rafPending = true;
+      requestAnimationFrame(function() { rafPending = false; parallaxTick(); });
+    }, { passive: true });
+    parallaxTick();
+  </script>
+
+</body>
+</html>
